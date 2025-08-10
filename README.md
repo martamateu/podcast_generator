@@ -1,55 +1,23 @@
 # DailyCast - Your Daily Podcast
 
-Una aplicación web moderna de podcasts diarios construida con React y TypeScript.
+A modern daily podcast web application built with React and TypeScript.
 
-## 🌐 Ver en Vivo
+## 🌐 Live Demo
 
-**Sitio web:** https://martamateu.github.io/podcast_generator/
+**Website:** https://martamateu.github.io/podcast_generator/
 
-## 🚀 Ejecutar Localmente
+## 🎨 Features
 
-**Requisitos previos:** Node.js
+- ✅ Modern and clean design
+- ✅ Responsive interface
+- ✅ Integrated podcast player
+- ✅ Daily podcasts by day of the week
+- ✅ Light and accessible color scheme
 
-1. **Clonar el repositorio:**
-   ```bash
-   git clone https://github.com/martamateu/podcast_generator.git
-   cd podcast_generator
-   ```
+## 🛠️ Technologies
 
-2. **Instalar dependencias:**
-   ```bash
-   npm install
-   ```
-
-3. **Ejecutar la aplicación:**
-   ```bash
-   npm run dev
-   ```
-
-4. **Abrir en el navegador:**
-   http://localhost:5173
-
-## 📦 Deploy
-
-Para actualizar el sitio web:
-
-```bash
-npm run build
-npx gh-pages -d dist
-```
-
-## 🎨 Características
-
-- ✅ Diseño moderno y limpio
-- ✅ Interfaz responsive
-- ✅ Reproductor de podcasts integrado
-- ✅ Podcasts diarios por día de la semana
-- ✅ Esquema de colores claro y accesible
-
-## 🛠️ Tecnologías
-
-- **React** - Framework frontend
-- **TypeScript** - Tipado estático
+- **React** - Frontend framework
+- **TypeScript** - Static typing
 - **Vite** - Build tool
-- **Tailwind CSS** - Estilos
+- **Tailwind CSS** - Styling
 - **GitHub Pages** - Hosting
