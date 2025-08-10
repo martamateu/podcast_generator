@@ -26,14 +26,14 @@ const App: React.FC = () => {
 
         {currentPodcast ? (
           <>
-            <div className="text-center mb-6 p-4 bg-brand-surface/50 rounded-lg border border-white/10">
+            <div className="text-center mb-6 p-4 bg-brand-surface rounded-lg border border-gray-200 shadow-sm">
               <p className="font-bold text-xl">It's <span className="text-brand-primary">{todayName}</span>!</p>
               <p className="text-brand-secondary text-sm">Here is your podcast for the day. Press play and enjoy.</p>
             </div>
             <PodcastPlayer podcast={currentPodcast} />
           </>
         ) : (
-          <div className="bg-brand-surface p-8 rounded-2xl text-center shadow-2xl border border-white/10">
+          <div className="bg-brand-surface p-8 rounded-2xl text-center shadow-lg border border-gray-200">
             <h2 className="text-2xl font-bold mb-4">It's the Weekend!</h2>
             <p className="text-brand-secondary">
               Time to relax and recharge. Come back on Monday for a brand new episode.

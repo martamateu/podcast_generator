@@ -54,13 +54,13 @@ export const PodcastPlayer: React.FC<PodcastPlayerProps> = ({ podcast }) => {
   }, [podcast]);
 
   return (
-    <div className="bg-brand-surface rounded-2xl p-6 shadow-2xl border border-white/10 flex flex-col items-center animate-fade-in">
+    <div className="bg-brand-surface rounded-2xl p-6 shadow-lg border border-gray-200 flex flex-col items-center animate-fade-in">
       <div className="relative w-full aspect-square mb-6">
          <img
             key={podcast.coverImage}
             src={podcast.coverImage}
             alt={podcast.title}
-            className="w-full h-full object-cover rounded-lg shadow-lg"
+            className="w-full h-full object-cover rounded-lg shadow-md"
           />
       </div>
       
@@ -74,13 +74,13 @@ export const PodcastPlayer: React.FC<PodcastPlayerProps> = ({ podcast }) => {
             type="range"
             value={progress}
             onChange={handleScrub}
-            className="w-full h-1 bg-white/20 rounded-lg appearance-none cursor-pointer range-sm accent-brand-primary"
+            className="w-full h-1 bg-gray-200 rounded-lg appearance-none cursor-pointer range-sm accent-brand-primary"
             />
       </div>
 
       <button
         onClick={togglePlayPause}
-        className="mt-6 bg-brand-primary text-brand-bg rounded-full w-16 h-16 flex items-center justify-center shadow-lg transform hover:scale-105 transition-transform duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-brand-surface focus:ring-brand-primary"
+        className="mt-6 bg-brand-primary text-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg transform hover:scale-105 transition-transform duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-brand-surface focus:ring-brand-primary"
         aria-label={isPlaying ? 'Pause Podcast' : 'Play Podcast'}
       >
         <Icon name={isPlaying ? 'pause' : 'play'} className="w-8 h-8" />
