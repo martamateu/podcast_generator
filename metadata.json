@@ -1,0 +1,5 @@
+{
+  "name": "DailyCast: Your Daily Podcast",
+  "description": "A modern, responsive web app that delivers a fresh podcast episode every weekday. It automatically detects the day and presents the corresponding podcast with a cover image and a one-click play button.",
+  "requestFramePermissions": []
+}
