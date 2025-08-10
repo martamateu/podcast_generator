@@ -84,7 +84,8 @@ export const PodcastPlayer: React.FC<PodcastPlayerProps> = ({ podcast }) => {
         aria-label={isPlaying ? 'Pause Podcast' : 'Play Podcast'}
       >
         <Icon name={isPlaying ? 'pause' : 'play'} className="w-8 h-8" />
-      </audio>
+      </button>
+      
       <audio
         ref={audioRef}
         src={podcast.audioUrl}
